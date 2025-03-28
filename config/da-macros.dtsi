@@ -1,0 +1,71 @@
+/ {
+
+    macros {
+        // Character à
+        a_gr: a_gr {
+            label = "a_gr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = ;
+            bindings = <&macro_press &kp RALT>
+                     , <&macro_tap &kp GRAVE>
+                     , <&macro_release &kp RALT>
+                     , <&macro_tap &kp A>;
+        };
+
+        // Character è
+        e_gr: e_gr {
+            label = "e_gr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = ;
+            bindings = <&macro_press &kp RALT>
+                     , <&macro_tap &kp GRAVE>
+                     , <&macro_release &kp RALT>
+                     , <&macro_tap &kp E>;
+        };
+
+        // Character ì
+        i_gr: i_gr {
+            label = "i_gr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = ;
+            bindings = <&macro_press &kp RALT>
+                     , <&macro_tap &kp GRAVE>
+                     , <&macro_release &kp RALT>
+                     , <&macro_tap &kp I>;
+        };
+
+        // Character ò
+        o_gr: o_gr {
+            label = "o_gr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = ;
+            bindings = <&macro_press &kp RALT>
+                     , <&macro_tap &kp GRAVE>
+                     , <&macro_release &kp RALT>
+                     , <&macro_tap &kp O>;
+        };
+
+        // Character ù
+        u_gr: u_gr {
+            label = "u_gr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = ;
+            bindings = <&macro_press &kp RALT>
+                     , <&macro_tap &kp GRAVE>
+                     , <&macro_release &kp RALT>
+                     , <&macro_tap &kp U>;
+        };
+
+        // Character é 
+        e_ac: e_ac {
+            label = "e_ac";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = ;
+            bindings = <&macro_press &kp RALT>
+                     , <&macro_tap &kp E>
+                     , <&macro_release &kp RALT>
+                     , <&macro_tap &kp E>;
+        };
+    };
+
+};
