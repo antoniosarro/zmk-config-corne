@@ -18,12 +18,25 @@
     };
 
 / {
-    combos {
-        compatible = "zmk,combos";
+  combos {
+    compatible = "zmk,combos";
 
-        dsd {
-            bindings = <&gresc>;
-            key-positions = <17 14>;
-        };
+      // Various types of brackets 
+      COMBO(lpar, &kp LPAR,  2  3, 0 1, 20, 50)
+      COMBO(lbkt, &kp LBKT, 14 15, 0 1, 20, 50)
+      COMBO(lbrc, &kp LBRC, 26 27, 0 1, 20, 50)
+      COMBO(rpar, &kp RPAR,  8  9, 0 1, 20, 50)
+      COMBO(rbkt, &kp RBKT, 20 21, 0 1, 20, 50)
+      COMBO(rbrc, &kp RBRC, 32 33, 0 1, 20, 50)
+        
+      // Backslash
+      COMBO(backslash, &kp BSLH, 0 1, 0 1, 20, 50)
+
+      // Caps lock
+      // COMBO(shift2capslock, &kp CAPSLOCK, 24 35, 0, 20, 50)
+
+      // Caps workd
+      COMBO(shift2capsword, &caps_word, 24 35, 0, 20, 50)
+
     };
 };
